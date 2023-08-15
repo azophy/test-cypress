@@ -22,6 +22,8 @@ jobs:
           browser: chrome
         env:
           CYPRESS_host: ${{ secrets.TEST_HOST }}
+          CYPRESS_username: ${{ secrets.TEST_USERNAME }}
+          CYPRESS_password: ${{ secrets.TEST_PASSWORD }}
       # after the test run completes store videos and any screenshots
       - uses: actions/upload-artifact@v3
         # add the line below to store screenshots only on failures
