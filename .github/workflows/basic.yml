@@ -5,8 +5,8 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    # runs tests every day at 4am
-    - cron: '0 4 * * *'
+    # runs tests every day at 3.00 WIB -> 20.00 UTC
+    - cron: '0 20 * * *'
 
 jobs:
   cypress-run:
